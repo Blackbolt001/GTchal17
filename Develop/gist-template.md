@@ -1,6 +1,6 @@
-# Title (It's a bird, It's a plane, It's Regular Expressions!!)
+ #  It's a bird, It's a plane, It's Regular Expressions!!
 
-Introductory paragraph 
+ Nothing to see here just some RegEx
 
     (they have been called puzzles, games, digit selectors, and all in all crazy strings, but most shudder at the phrase Regular Expressions.)
 
@@ -15,15 +15,11 @@ Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -42,7 +38,8 @@ Quantifiers specify how many times an element can or must be found to be conside
 ### Character Classes
 
 [a-z0-9_\.-] [\da-z\.-] [a-z\.]
-$ - Match the end of the input string. 
+
+$ - Match the end of the input string 
 
 ### Grouping and Capturing
 
@@ -61,7 +58,7 @@ since we are looking for an email we are looking for
 
 ### Bracket Expressions
 
-basic regular expressions - ¬ $ . * \( \) [ \{ \} \
+basic regular expressions
 here we use the $ symbol to state that this is the endpoint for the regex imput line 
 consequently the \ character turns of the special meaning of any characters directly behind it
 
