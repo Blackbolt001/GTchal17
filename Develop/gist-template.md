@@ -27,28 +27,67 @@ Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Regex Components
 
+the 3 main expressions you will see are Anchors, Character sets, and modifiers
+think of these as the overall syntax for reading regular expressions and we all konw from reading documentaitions that most things 
+mean something eslse.
+
 ### Anchors
+^ 
+Start of a String or a Line - this specifies the pattern to match or seach must begin at this location
 
 ### Quantifiers
-
-### OR Operator
++
+Quantifiers specify how many times an element can or must be found to be considered a match.
 
 ### Character Classes
 
-### Flags
+[a-z0-9_\.-] [\da-z\.-] [a-z\.]
+$ - Match the end of the input string. 
 
 ### Grouping and Capturing
 
+([a-z0-9_\.-]+)  - grouping is where we capture text matched by the regex - think of it as a formula for our search 
+since we are looking for an email we are looking for 
+- somthing or  
+
+/^([a-z0-9_\.-]+)
+
+@ somthingElse ( one word)
+
+@([\da-z\.-]+)\
+
+.com or .org or . net or . something 
+([a-z\.]{2,6})
+
 ### Bracket Expressions
+
+basic regular expressions - ¬ $ . * \( \) [ \{ \} \
+here we use the $ symbol to state that this is the endpoint for the regex imput line 
+consequently the \ character turns of the special meaning of any characters directly behind it
 
 ### Greedy and Lazy Match
 
-### Boundaries
+([a-z0-9_\.-]+)@
+here the + quantifier also acts as a greedy match quantifer
+here we are telling the regex that this match could be 
+Mach123
+Mach123match
+Mach123matchmore
+ItcouldAlsobeThis123
+Or123this@
+
+so even if Mach123 fits our search criteria it will be greedy and keep looking for more 
+
 
 ### Back-references
 
-### Look-ahead and Look-behind
+([a-z\.]{2,6}) - here we see the group capturing in the () but this unique add on is called the back reference
+more specifically the {2,6} - here we are capturing the text and number that allows us to backreference or call back apply 
+operators to the enire group.
+
+
+
 
 ## Author
-
+ Joseph Gossett
 A short section about the author with a link to the author's GitHub profile (Joseph Gossett is a cool person, I have known him my entire life)
